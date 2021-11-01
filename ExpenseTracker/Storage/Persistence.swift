@@ -62,6 +62,7 @@ struct PersistenceController {
     newItem.title = "Preview Item Title"
     newItem.date = Date(timeIntervalSinceNow: 60)
     newItem.comment = "Preview Item Comment"
+    newItem.price = 12.34
   }()
   
   init(inMemory: Bool = false) {
