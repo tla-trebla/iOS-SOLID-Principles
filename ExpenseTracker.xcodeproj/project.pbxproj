@@ -88,7 +88,6 @@
 				18D775DA22AD963800AE281E /* LaunchScreen.storyboard */,
 				18D775CE22AD944400AE281E /* Info.plist */,
 				18D775C822AD944400AE281E /* Preview Content */,
-				5E974E8D2730222200D36093 /* Persistence.swift */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -116,6 +115,7 @@
 		F5AEF3A825FC2F9300A25CE0 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				5E974E8D2730222200D36093 /* Persistence.swift */,
 				F5AEF3BC25FC3F3400A25CE0 /* ExpenseModel+CoreDataClass.swift */,
 				F5AEF3BD25FC3F3400A25CE0 /* ExpenseModel+CoreDataProperties.swift */,
 				F5AEF3AA25FC2FC100A25CE0 /* ExpensesModel.xcdatamodeld */,
