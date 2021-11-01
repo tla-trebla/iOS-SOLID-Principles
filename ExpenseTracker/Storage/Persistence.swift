@@ -42,6 +42,7 @@ struct PersistenceController {
     let viewContext = result.container.viewContext
     for index in 1..<6 {
       let newItem = ExpenseModel(context: viewContext)
+      newItem.title = "Test Title \(index)"
     }
   }()
   
