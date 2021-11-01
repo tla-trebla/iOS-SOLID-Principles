@@ -40,6 +40,9 @@ struct PersistenceController {
   static var preview: PersistenceController = {
     let result = PersistenceController(inMemory: true)
     let viewContext = result.container.viewContext
+    for index in 1..<6 {
+      let newItem = ExpenseModel(context: viewContext)
+    }
   }()
   
   init(inMemory: Bool = false) {
