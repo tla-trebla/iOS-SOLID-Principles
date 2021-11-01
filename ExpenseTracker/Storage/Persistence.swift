@@ -39,5 +39,8 @@ struct PersistenceController {
   
   init(inMemory: Bool = false) {
     container = NSPersistentContainer(name: "ExpensesModel")
+    if inMemory {
+      container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")
+    }
   }
 }
