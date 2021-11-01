@@ -48,6 +48,12 @@ struct PersistenceController {
       newItem.price = Double(index + 1) * 12.3
       newItem.id = UUID()
     }
+    do {
+      try viewContext.save()
+    } catch {
+      let nsError = error as NSError
+      fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+    }
   }()
   
   init(inMemory: Bool = false) {
