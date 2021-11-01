@@ -45,6 +45,7 @@ struct PersistenceController {
       newItem.title = "Test Title \(index)"
       newItem.date = Date(timeIntervalSinceNow: Double(index * -60))
       newItem.comment = "Test Comment \(index)"
+      newItem.price = Double(index + 1) * 12.3
     }
   }()
   
