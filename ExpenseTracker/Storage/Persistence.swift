@@ -38,7 +38,7 @@ struct PersistenceController {
   let container: NSPersistentContainer
   
   static var preview: PersistenceController = {
-    
+    let result = PersistenceController(inMemory: true)
   }()
   
   init(inMemory: Bool = false) {
