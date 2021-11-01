@@ -64,6 +64,7 @@ struct PersistenceController {
     newItem.comment = "Preview Item Comment"
     newItem.price = 12.34
     newItem.id = UUID()
+    return newItem
   }()
   
   init(inMemory: Bool = false) {
