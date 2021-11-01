@@ -38,6 +38,6 @@ struct PersistenceController {
   let container: NSPersistentContainer
   
   init(inMemory: Bool = false) {
-    <#statements#>
+    container = NSPersistentContainer(name: "ExpensesModel")
   }
 }
