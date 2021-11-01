@@ -81,10 +81,4 @@ struct AppMain: App {
     newItem.id = UUID()
     return newItem
   }()
-
-  var body: some Scene {
-    WindowGroup {
-      ContentView()
-    }
-  }
 }
