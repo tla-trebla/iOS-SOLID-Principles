@@ -43,6 +43,7 @@ struct PersistenceController {
     for index in 1..<6 {
       let newItem = ExpenseModel(context: viewContext)
       newItem.title = "Test Title \(index)"
+      newItem.date = Date(timeIntervalSinceNow: Double(index * -60))
     }
   }()
   
