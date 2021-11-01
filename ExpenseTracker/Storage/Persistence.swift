@@ -39,6 +39,7 @@ struct PersistenceController {
   
   static var preview: PersistenceController = {
     let result = PersistenceController(inMemory: true)
+    let viewContext = result.container.viewContext
   }()
   
   init(inMemory: Bool = false) {
