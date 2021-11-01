@@ -37,6 +37,10 @@ struct PersistenceController {
   
   let container: NSPersistentContainer
   
+  static var preview: PersistenceController = {
+    
+  }()
+  
   init(inMemory: Bool = false) {
     container = NSPersistentContainer(name: "ExpensesModel")
     if inMemory {
