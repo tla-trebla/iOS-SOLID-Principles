@@ -59,6 +59,7 @@ struct PersistenceController {
   
   static let previewItem: ExpenseModel = {
     let newItem = ExpenseModel(context: preview.container.viewContext)
+    newItem.title = "Preview Item Title"
   }()
   
   init(inMemory: Bool = false) {
