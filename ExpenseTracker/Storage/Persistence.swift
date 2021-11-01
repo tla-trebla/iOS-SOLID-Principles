@@ -63,6 +63,7 @@ struct PersistenceController {
     newItem.date = Date(timeIntervalSinceNow: 60)
     newItem.comment = "Preview Item Comment"
     newItem.price = 12.34
+    newItem.id = UUID()
   }()
   
   init(inMemory: Bool = false) {
