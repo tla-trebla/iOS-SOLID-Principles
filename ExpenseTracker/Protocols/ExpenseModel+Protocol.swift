@@ -32,4 +32,4 @@
 
 import Foundation
 
-extension ExpenseModel: ExpenseProtocol { }
+extension ExpenseModel: ExpenseModelProtocol { }

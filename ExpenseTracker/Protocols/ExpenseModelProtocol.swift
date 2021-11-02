@@ -32,7 +32,7 @@
 
 import Foundation
 
-protocol ExpenseProtocol {
+protocol ExpenseModelProtocol {
   var title: String? { get }
   var price: Double { get }
   var comment: String? { get }
