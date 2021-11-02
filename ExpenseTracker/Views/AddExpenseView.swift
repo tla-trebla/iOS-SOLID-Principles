@@ -101,7 +101,8 @@ struct AddExpenseView: View {
 
 struct AddExpenseView_Previews: PreviewProvider {
   class PreviewSaveHandler: SaveEntryProtocol {
-    func saveEntry(title: String, price: Double, date: Date, comment: String) {
+    func saveEntry(title: String, price: Double, date: Date, comment: String) -> Bool {
+      return true
     }
   }
   static var previews: some View {
