@@ -50,7 +50,7 @@ struct ContentView: View {
   }
 
   var dailyReport: DailyExpensesView {
-    let dailyDataSource = DailyReportsDataSource()
+    let dailyDataSource = ReportsDataSource()
     return DailyExpensesView(dataSource: dailyDataSource)
   }
 

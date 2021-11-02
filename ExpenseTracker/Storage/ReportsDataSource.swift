@@ -33,7 +33,7 @@
 import CoreData
 import Combine
 
-class DailyReportsDataSource: ObservableObject {
+class ReportsDataSource: ObservableObject {
   var viewContext: NSManagedObjectContext
 
   @Published private(set) var currentEntries: [ExpenseModel] = []
