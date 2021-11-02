@@ -42,6 +42,8 @@ enum ReportRange: String, CaseIterable {
     switch self {
     case .daily:
       return (now.startOfDay, now.endOfDay)
+    case .weekly:
+      return (now.startOfWeek, now.endOfWeek)
     case .monthly:
       return (now.startOfMonth, now.endOfMonth)
     }
