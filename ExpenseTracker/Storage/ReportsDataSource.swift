@@ -52,10 +52,11 @@ class ReportsDataSource: ObservableObject {
   private func getEntries() -> [ExpenseModel] {
     let fetchRequest: NSFetchRequest<ExpenseModel> = ExpenseModel.fetchRequest()
     fetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \ExpenseModel.date, ascending: false)]
+    let (startDate, endDate) = reportRange.timeRange()
     fetchRequest.predicate = NSPredicate(
       format: "%@ <= date AND date <= %@",
-      Date().startOfDay as CVarArg,
-      Date().endOfDay as CVarArg)
+      startDate as CVarArg,
+      endDate as CVarArg)
     do {
       let results = try viewContext.fetch(fetchRequest)
       return results
