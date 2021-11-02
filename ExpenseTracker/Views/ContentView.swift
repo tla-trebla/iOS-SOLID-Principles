@@ -35,8 +35,10 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     NavigationView {
-      ForEach(ReportRange.allCases, id: \.self) { value in
-        NavigationLink(value.rawValue, destination: expensesView(for: value).navigationTitle(value.rawValue))
+      List {
+        ForEach(ReportRange.allCases, id: \.self) { value in
+          NavigationLink(value.rawValue, destination: expensesView(for: value).navigationTitle(value.rawValue))
+        }
       }
       .navigationTitle("Reports")
     }
