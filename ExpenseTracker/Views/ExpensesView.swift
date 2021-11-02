@@ -82,6 +82,8 @@ struct ExpensesView_Previews: PreviewProvider {
         saveEntry(title: "Test Title \(index)", price: Double(index + 1) * 12.3, date: Date(timeIntervalSinceNow: Double(index * -60)), comment: "Test Comment \(index)")
       }
     }
+    
+    override func prepare() { }
   }
   
   static var previews: some View {
