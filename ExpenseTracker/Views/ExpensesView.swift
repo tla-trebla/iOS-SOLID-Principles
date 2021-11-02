@@ -86,9 +86,10 @@ struct ExpensesView_Previews: PreviewProvider {
     
     override func prepare() { }
     
-    override func saveEntry(title: String, price: Double, date: Date, comment: String) {
+    override func saveEntry(title: String, price: Double, date: Date, comment: String) -> Bool {
       let newEntry = PreviewExpenseEntry(title: title, price: price, comment: comment, date: date)
       currentEntries.append(newEntry)
+      return true
     }
   }
   
