@@ -35,16 +35,7 @@ import SwiftUI
 struct ContentView: View {
   var body: some View {
     NavigationView {
-      List {
-        NavigationLink(
-          "Today",
-          destination: dailyReport
-            .navigationTitle("Today"))
-        NavigationLink(
-          "This Month",
-          destination: monthlyReport
-            .navigationTitle("This Month"))
-      }
+      
       .navigationTitle("Reports")
     }
   }
