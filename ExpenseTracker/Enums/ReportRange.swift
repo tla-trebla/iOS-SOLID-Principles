@@ -38,5 +38,11 @@ enum ReportRange: String, CaseIterable {
   
   func timeRange() -> (Date, Date) {
     let now = Date()
+    switch self {
+    case .daily:
+      return (now.startOfDay, now.endOfDay)
+    case .monthly:
+      return (now.startOfMonth, now.endOfMonth)
+    }
   }
 }
