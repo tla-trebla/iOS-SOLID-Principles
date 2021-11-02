@@ -67,7 +67,7 @@ struct ExpensesView: View {
 
 struct ExpensesView_Previews: PreviewProvider {
   static var previews: some View {
-    let reportsDataSource = ReportsDataSource(viewContext: PersistenceController.preview.container.viewContext)
+    let reportsDataSource = ReportsDataSource(viewContext: PersistenceController.preview.container.viewContext, reportRange: .daily)
     ExpensesView(dataSource: reportsDataSource)
   }
 }
