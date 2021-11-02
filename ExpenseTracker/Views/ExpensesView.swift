@@ -75,6 +75,15 @@ struct ExpensesView_Previews: PreviewProvider {
     var id: UUID? = UUID()
   }
   
+  class PreviewReportsDataSource: ReportReader {
+    override init() {
+      super.init()
+      for index in 1..<6 {
+        saveEntry(title: "Test Title \(index)", price: Double(index + 1) * 12.3, date: Date(timeIntervalSinceNow: Double(index * -60)), comment: "Test Comment \(index)")
+      }
+    }
+  }
+  
   static var previews: some View {
     let reportsDataSource = ReportsDataSource(viewContext: PersistenceController.preview.container.viewContext, reportRange: .daily)
     ExpensesView(dataSource: reportsDataSource)
