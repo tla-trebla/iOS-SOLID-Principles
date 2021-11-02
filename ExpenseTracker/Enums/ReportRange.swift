@@ -35,4 +35,8 @@ import Foundation
 enum ReportRange: String, CaseIterable {
   case daily = "Today"
   case monthly = "This Month"
+  
+  func timeRange() -> (Date, Date) {
+    
+  }
 }
