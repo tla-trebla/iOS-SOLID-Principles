@@ -40,6 +40,7 @@ class ReportsDataSource: ReportReader {
   init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext, reportRange: ReportRange) {
     self.viewContext = viewContext
     self.reportRange = reportRange
+    super.init()
     prepare()
   }
 
