@@ -13,6 +13,8 @@
 		18D775CA22AD944400AE281E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D775C922AD944400AE281E /* Preview Assets.xcassets */; };
 		18D775D822AD963800AE281E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D775DA22AD963800AE281E /* LaunchScreen.storyboard */; };
 		5E0CD1612730D28200953F62 /* ReportRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CD1602730D28200953F62 /* ReportRange.swift */; };
+		5E0CD1642730F27D00953F62 /* ReportReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CD1632730F27D00953F62 /* ReportReader.swift */; };
+		5E0CD1662730F28700953F62 /* ExpenseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */; };
 		5E974E8E2730222200D36093 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E974E8D2730222200D36093 /* Persistence.swift */; };
 		F52DF9F526013D050047F837 /* ReportsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52DF9F326013D050047F837 /* ReportsDataSource.swift */; };
 		F5AEF3A025FC2BA400A25CE0 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEF39F25FC2BA400A25CE0 /* ExpensesView.swift */; };
@@ -34,6 +36,8 @@
 		18D775CE22AD944400AE281E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D775DE22AD96B400AE281E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E0CD1602730D28200953F62 /* ReportRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRange.swift; sourceTree = "<group>"; };
+		5E0CD1632730F27D00953F62 /* ReportReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportReader.swift; sourceTree = "<group>"; };
+		5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModelProtocol.swift; sourceTree = "<group>"; };
 		5E974E8D2730222200D36093 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F52DF9F326013D050047F837 /* ReportsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsDataSource.swift; sourceTree = "<group>"; };
 		F5AEF39F25FC2BA400A25CE0 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 		18D775BF22AD944300AE281E /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				5E0CD1622730F26700953F62 /* Protocols */,
 				5E0CD15F2730D27300953F62 /* Enums */,
 				F5BE6D9C25FD99310013B09C /* Extensions */,
 				F5AEF3A825FC2F9300A25CE0 /* Storage */,
@@ -105,6 +110,15 @@
 				5E0CD1602730D28200953F62 /* ReportRange.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		5E0CD1622730F26700953F62 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E0CD1632730F27D00953F62 /* ReportReader.swift */,
+				5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F5AEF39E25FC2B7C00A25CE0 /* Views */ = {
@@ -240,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0CD1642730F27D00953F62 /* ReportReader.swift in Sources */,
 				F5AEF3BE25FC3F3400A25CE0 /* ExpenseModel+CoreDataClass.swift in Sources */,
 				18D775C522AD944300AE281E /* ContentView.swift in Sources */,
 				F5AEF3A025FC2BA400A25CE0 /* ExpensesView.swift in Sources */,
@@ -249,6 +264,7 @@
 				F5AEF3A625FC2BE300A25CE0 /* ExpenseItemView.swift in Sources */,
 				F5AEF3AC25FC2FC100A25CE0 /* ExpensesModel.xcdatamodeld in Sources */,
 				F5AEF3B025FC36B100A25CE0 /* TotalView.swift in Sources */,
+				5E0CD1662730F28700953F62 /* ExpenseModelProtocol.swift in Sources */,
 				F5AEF3A325FC2BD700A25CE0 /* AddExpenseView.swift in Sources */,
 				F52DF9F526013D050047F837 /* ReportsDataSource.swift in Sources */,
 				F5BE6D9E25FD994B0013B09C /* Date.swift in Sources */,
