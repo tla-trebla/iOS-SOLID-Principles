@@ -35,6 +35,7 @@ import Combine
 
 class ReportsDataSource: ObservableObject {
   var viewContext: NSManagedObjectContext
+  let reportRange: ReportRange
 
   @Published private(set) var currentEntries: [ExpenseModel] = []
 
