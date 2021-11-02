@@ -34,7 +34,7 @@ import SwiftUI
 
 struct AddExpenseView: View {
   @Environment(\.presentationMode) var presentation
-  var saveClosure: (String, Double, Date, String) -> Void
+  var saveEntryHandler: SaveEntryProtocol
 
   @State var title: String = ""
   @State var time = Date()
