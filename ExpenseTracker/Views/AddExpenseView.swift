@@ -105,7 +105,6 @@ struct AddExpenseView_Previews: PreviewProvider {
     }
   }
   static var previews: some View {
-    AddExpenseView { _, _, _, _ in
-    }
+    AddExpenseView(saveEntryHandler: PreviewSaveHandler())
   }
 }
