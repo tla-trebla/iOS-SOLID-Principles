@@ -34,5 +34,7 @@ import Combine
 import Foundation
 
 protocol ReportReader: ObservableObject {
-  <#requirements#>
+  @Published var currentEntries: [ExpenseModelProtocol] { get }
+  func saveEntry(title: String, price: Double, date: Date, comment: String)
+  func prepare()
 }
