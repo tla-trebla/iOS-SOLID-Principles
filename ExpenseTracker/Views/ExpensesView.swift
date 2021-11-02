@@ -66,9 +66,15 @@ struct ExpensesView: View {
 }
 
 struct ExpensesView_Previews: PreviewProvider {
+  
   struct PreviewExpenseEntry: ExpenseModelProtocol {
-    <#fields#>
+    var title: String?
+    var price: Double
+    var comment: String?
+    var date: Date?
+    var id: UUID?
   }
+  
   static var previews: some View {
     let reportsDataSource = ReportsDataSource(viewContext: PersistenceController.preview.container.viewContext, reportRange: .daily)
     ExpensesView(dataSource: reportsDataSource)
