@@ -37,8 +37,6 @@ class ReportsDataSource: ReportReader {
   var viewContext: NSManagedObjectContext
   let reportRange: ReportRange
 
-  @Published var currentEntries: [ExpenseModelProtocol] = []
-
   init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext, reportRange: ReportRange) {
     self.viewContext = viewContext
     self.reportRange = reportRange
