@@ -65,7 +65,7 @@ class ReportsDataSource: ReportReader, SaveEntryProtocol {
     }
   }
 
-  override func saveEntry(title: String, price: Double, date: Date, comment: String) {
+  func saveEntry(title: String, price: Double, date: Date, comment: String) {
     let newItem = ExpenseModel(context: viewContext)
     newItem.title = title
     newItem.date = date
