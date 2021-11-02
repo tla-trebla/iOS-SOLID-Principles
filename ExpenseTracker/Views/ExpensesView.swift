@@ -72,7 +72,7 @@ struct ExpensesView_Previews: PreviewProvider {
     var price: Double
     var comment: String?
     var date: Date?
-    var id: UUID?
+    var id: UUID? = UUID()
   }
   
   static var previews: some View {
