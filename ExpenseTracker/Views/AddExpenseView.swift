@@ -82,7 +82,7 @@ struct AddExpenseView: View {
       return
     }
 
-    saveClosure(title, numericPrice, time, comment)
+    saveEntryHandler.saveEntry(title: title, price: numericPrice, date: time, comment: comment)
     cancelEntry()
   }
 
