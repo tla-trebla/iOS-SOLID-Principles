@@ -43,7 +43,7 @@ class ReportsDataSource: ReportReader {
     prepare()
   }
 
-  func prepare() {
+  override func prepare() {
     currentEntries = getEntries()
   }
 
@@ -64,7 +64,7 @@ class ReportsDataSource: ReportReader {
     }
   }
 
-  func saveEntry(title: String, price: Double, date: Date, comment: String) {
+  override func saveEntry(title: String, price: Double, date: Date, comment: String) {
     let newItem = ExpenseModel(context: viewContext)
     newItem.title = title
     newItem.date = date
