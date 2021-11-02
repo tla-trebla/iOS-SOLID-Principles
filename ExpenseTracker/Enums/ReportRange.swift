@@ -37,6 +37,6 @@ enum ReportRange: String, CaseIterable {
   case monthly = "This Month"
   
   func timeRange() -> (Date, Date) {
-    
+    let now = Date()
   }
 }
