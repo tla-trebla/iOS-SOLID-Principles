@@ -76,7 +76,7 @@ struct ExpensesView_Previews: PreviewProvider {
     var id: UUID? = UUID()
   }
   
-  class PreviewReportsDataSource: ReportReader {
+  class PreviewReportsDataSource: ReportReader, SaveEntryProtocol {
     override init() {
       super.init()
       for index in 1..<6 {
@@ -86,7 +86,7 @@ struct ExpensesView_Previews: PreviewProvider {
     
     override func prepare() { }
     
-    override func saveEntry(title: String, price: Double, date: Date, comment: String) -> Bool {
+    func saveEntry(title: String, price: Double, date: Date, comment: String) -> Bool {
       let newEntry = PreviewExpenseEntry(title: title, price: price, comment: comment, date: date)
       currentEntries.append(newEntry)
       return true
