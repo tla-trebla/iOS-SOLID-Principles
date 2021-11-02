@@ -80,7 +80,7 @@ struct ExpensesView_Previews: PreviewProvider {
     override init() {
       super.init()
       for index in 1..<6 {
-        saveEntry(title: "Test Title \(index)", price: Double(index + 1) * 12.3, date: Date(timeIntervalSinceNow: Double(index * -60)), comment: "Test Comment \(index)")
+        _ = saveEntry(title: "Test Title \(index)", price: Double(index + 1) * 12.3, date: Date(timeIntervalSinceNow: Double(index * -60)), comment: "Test Comment \(index)")
       }
     }
     
