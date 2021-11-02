@@ -80,6 +80,8 @@ class ReportsDataSource: ReportReader, SaveEntryProtocol {
     }
 
     try? viewContext.save()
+    
+    return true
   }
 
   func delete(entry: ExpenseModel) {
