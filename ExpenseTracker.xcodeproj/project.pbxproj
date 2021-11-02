@@ -17,6 +17,7 @@
 		5E0CD1662730F28700953F62 /* ExpenseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */; };
 		5E0CD1682730F49A00953F62 /* ExpenseModel+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0CD1672730F49A00953F62 /* ExpenseModel+Protocol.swift */; };
 		5E974E8E2730222200D36093 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E974E8D2730222200D36093 /* Persistence.swift */; };
+		5EC4869E27314D2C00102051 /* SaveEntryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC4869D27314D2C00102051 /* SaveEntryProtocol.swift */; };
 		F52DF9F526013D050047F837 /* ReportsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52DF9F326013D050047F837 /* ReportsDataSource.swift */; };
 		F5AEF3A025FC2BA400A25CE0 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEF39F25FC2BA400A25CE0 /* ExpensesView.swift */; };
 		F5AEF3A325FC2BD700A25CE0 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AEF3A225FC2BD700A25CE0 /* AddExpenseView.swift */; };
@@ -41,6 +42,7 @@
 		5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModelProtocol.swift; sourceTree = "<group>"; };
 		5E0CD1672730F49A00953F62 /* ExpenseModel+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExpenseModel+Protocol.swift"; sourceTree = "<group>"; };
 		5E974E8D2730222200D36093 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5EC4869D27314D2C00102051 /* SaveEntryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveEntryProtocol.swift; sourceTree = "<group>"; };
 		F52DF9F326013D050047F837 /* ReportsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportsDataSource.swift; sourceTree = "<group>"; };
 		F5AEF39F25FC2BA400A25CE0 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		F5AEF3A225FC2BD700A25CE0 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				5E0CD1632730F27D00953F62 /* ReportReader.swift */,
 				5E0CD1652730F28700953F62 /* ExpenseModelProtocol.swift */,
 				5E0CD1672730F49A00953F62 /* ExpenseModel+Protocol.swift */,
+				5EC4869D27314D2C00102051 /* SaveEntryProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				5E0CD1662730F28700953F62 /* ExpenseModelProtocol.swift in Sources */,
 				F5AEF3A325FC2BD700A25CE0 /* AddExpenseView.swift in Sources */,
 				5E0CD1682730F49A00953F62 /* ExpenseModel+Protocol.swift in Sources */,
+				5EC4869E27314D2C00102051 /* SaveEntryProtocol.swift in Sources */,
 				F52DF9F526013D050047F837 /* ReportsDataSource.swift in Sources */,
 				F5BE6D9E25FD994B0013B09C /* Date.swift in Sources */,
 				5E0CD1612730D28200953F62 /* ReportRange.swift in Sources */,
