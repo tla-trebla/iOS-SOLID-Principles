@@ -49,15 +49,7 @@ struct ContentView: View {
     }
   }
 
-  var dailyReport: ExpensesView {
-    let dailyDataSource = ReportsDataSource()
-    return ExpensesView(dataSource: dailyDataSource)
-  }
-
-  var monthlyReport: MonthlyExpensesView {
-    let monthlyDataSource = MonthlyReportsDataSource()
-    return MonthlyExpensesView(dataSource: monthlyDataSource)
-  }
+  
 }
 
 struct ContentView_Previews: PreviewProvider {
