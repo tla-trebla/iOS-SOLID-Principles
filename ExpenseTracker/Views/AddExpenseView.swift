@@ -82,7 +82,10 @@ struct AddExpenseView: View {
       return
     }
 
-    saveEntryHandler.saveEntry(title: title, price: numericPrice, date: time, comment: comment)
+    guard saveEntryHandler.saveEntry(title: title, price: numericPrice, date: time, comment: comment) else {
+      print("Invalid entry")
+      return
+    }
     cancelEntry()
   }
 
