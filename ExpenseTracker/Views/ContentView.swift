@@ -50,7 +50,8 @@ struct ContentView: View {
   }
 
   func expensesView(for range: ReportRange) -> ExpensesView {
-    
+    let dataSource = ReportsDataSource(reportRange: range)
+    return ExpensesView(dataSource: dataSource)
   }
 }
 
