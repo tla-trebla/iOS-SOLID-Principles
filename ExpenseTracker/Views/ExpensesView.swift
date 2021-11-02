@@ -54,11 +54,12 @@ struct ExpensesView: View {
       })
     }
     .fullScreenCover(
-      isPresented: $isAddPresented) {
-      AddExpenseView { title, price, time, comment in
-        dataSource.saveEntry(title: title, price: price, date: time, comment: comment)
+      isPresented: $isAddPresented) { () -> AddExpenseView? in
+        guard let saveHandler = dataSource as? SaveEntryProtocol else {
+          return nil
+        }
+        return AddExpenseView(saveEntryHandler: saveHandler)
       }
-    }
     .onAppear {
       dataSource.prepare()
     }
