@@ -84,6 +84,11 @@ struct ExpensesView_Previews: PreviewProvider {
     }
     
     override func prepare() { }
+    
+    override func saveEntry(title: String, price: Double, date: Date, comment: String) {
+      let newEntry = PreviewExpenseEntry(title: title, price: price, comment: comment, date: date)
+      currentEntries.append(newEntry)
+    }
   }
   
   static var previews: some View {
