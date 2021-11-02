@@ -33,7 +33,7 @@
 import CoreData
 import Combine
 
-class ReportsDataSource: ObservableObject {
+class ReportsDataSource: ReportReader {
   var viewContext: NSManagedObjectContext
   let reportRange: ReportRange
 
