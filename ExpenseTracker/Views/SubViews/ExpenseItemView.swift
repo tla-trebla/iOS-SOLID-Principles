@@ -33,7 +33,7 @@
 import SwiftUI
 
 struct ExpenseItemView: View {
-  let expenseItem: ExpenseModel
+  let expenseItem: ExpenseModelProtocol
 
   static let dateFormatter: DateFormatter = {
     var dateFormatter = DateFormatter()
