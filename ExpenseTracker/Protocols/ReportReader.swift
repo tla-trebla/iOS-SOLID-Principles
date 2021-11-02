@@ -31,6 +31,7 @@
 /// THE SOFTWARE.
 
 import Combine
+import Foundation
 
 protocol ReportReader: ObservableObject {
   <#requirements#>
