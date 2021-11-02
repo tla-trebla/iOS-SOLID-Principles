@@ -49,7 +49,9 @@ struct ContentView: View {
     }
   }
 
-  
+  func expensesView(for range: ReportRange) -> ExpensesView {
+    
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
