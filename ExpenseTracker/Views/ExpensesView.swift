@@ -65,7 +65,7 @@ struct ExpensesView: View {
   }
 }
 
-struct DailyExpensesView_Previews: PreviewProvider {
+struct ExpensesView_Previews: PreviewProvider {
   static var previews: some View {
     let reportsDataSource = ReportsDataSource(viewContext: PersistenceController.preview.container.viewContext)
     ExpensesView(dataSource: reportsDataSource)
