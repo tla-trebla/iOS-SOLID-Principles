@@ -39,8 +39,9 @@ class ReportsDataSource: ObservableObject {
 
   @Published private(set) var currentEntries: [ExpenseModel] = []
 
-  init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext) {
+  init(viewContext: NSManagedObjectContext = PersistenceController.shared.container.viewContext, reportRange: ReportRange) {
     self.viewContext = viewContext
+    self.reportRange = reportRange
     prepare()
   }
 
