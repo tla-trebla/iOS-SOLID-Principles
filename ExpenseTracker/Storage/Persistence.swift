@@ -57,16 +57,6 @@ struct PersistenceController {
     return result
   }()
   
-  static let previewItem: ExpenseModel = {
-    let newItem = ExpenseModel(context: preview.container.viewContext)
-    newItem.title = "Preview Item Title"
-    newItem.date = Date(timeIntervalSinceNow: 60)
-    newItem.comment = "Preview Item Comment"
-    newItem.price = 12.34
-    newItem.id = UUID()
-    return newItem
-  }()
-  
   init(inMemory: Bool = false) {
     container = NSPersistentContainer(name: "ExpensesModel")
     if inMemory {
