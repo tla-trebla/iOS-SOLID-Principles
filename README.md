@@ -7,4 +7,4 @@ Link: https://www.raywenderlich.com/21503974-solid-principles-for-ios-apps#toc-a
 * Open-Closed Principle: open for extension, closed for modification, meaning the mod doesn't take a big effort to do it.
 * Liskov Substitution: when the object changed, it shouldn't break any code because it conforms the same subclass.
 * Interface Segregation: separate interface into different protocol for each interface's tasks.
-* Dependency Inversion: don't depends on concrete implementation, should have depend on the abstract from protocol.
+* Dependency Inversion: high-level business rules do not depend on mid or low level implementation.
